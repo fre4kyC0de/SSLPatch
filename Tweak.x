@@ -21,7 +21,7 @@ extern void __security_debug(CFStringRef scope,
 %ctor {
 	MSImageRef libSecurity = MSGetImageByName("/System/Library/Frameworks/Security.framework/Security");
 	if (!libSecurity) {
-		NSLog(@"SSLPatch: Failed to open libSecurity. goto fail;");
+		//NSLog(@"SSLPatch: Failed to open libSecurity. goto fail;");
 		return;
 	}
 	LIBSECURITYSYMBOL(CSSMOID_SHA1WithRSA);
